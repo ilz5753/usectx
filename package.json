@@ -1,33 +1,22 @@
 {
   "name": "@ilz5753/usectx",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "version": "1.0.2",
+  "main": "index.js",
   "type": "module",
   "files": [
-    "dist"
+    "src"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
   "scripts": {
-    "clean": "rimraf dist",
-    "prebuild": "npm run clean",
-    "build": "tsc",
+    "build": "tsc index.ts",
     "preversion": "npm run build",
     "version": "npm publish"
   },
   "devDependencies": {
     "@types/react": "latest",
-    "@types/lodash.isnull": "latest",
-    "typescript": "latest",
-    "rimraf": "latest"
+    "typescript": "latest"
   },
   "peerDependencies": {
-    "react": "latest",
-    "lodash.isnull": "latest"
+    "react": "latest"
   },
   "license": "MIT",
   "author": {

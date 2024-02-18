@@ -1,9 +1,9 @@
 {
-  "include": ["src"],
+  "include": ["index.ts"],
   "compilerOptions": {
     "lib": ["ESNext"],
-    "module": "esnext",
-    "target": "esnext",
+    "module": "ESNext",
+    "target": "ESNext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
@@ -16,11 +16,8 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": [
-      "typescript" // add Bun global
-    ],
+    "types": ["typescript"],
     "declaration": true,
-    "esModuleInterop": true,
-    "outDir": "dist"
+    "esModuleInterop": true
   }
 }
