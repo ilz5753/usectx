@@ -1,15 +1,10 @@
 {
   "name": "@ilz5753/usectx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
-  "files": [
-    "src"
-  ],
   "scripts": {
-    "build": "tsc index.ts",
-    "preversion": "npm run build",
-    "version": "npm publish"
+    "build": "tsc index.ts"
   },
   "devDependencies": {
     "@types/react": "latest",
