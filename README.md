@@ -42,4 +42,4 @@ The retrieved value from the context. If the value is undefined, an error will b
 
 > **Note**
 >
-> This hook should be used within a React component. It relies on the React useContext hook to retrieve the context value and uses the Lodash isundefined function to check if the value is undefined.
+> This hook should be used within a React component. It relies on the React useContext hook to retrieve the context value.
