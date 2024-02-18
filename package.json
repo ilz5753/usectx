@@ -1,0 +1,40 @@
+{
+  "name": "@ilz5753/usectx",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "version": "npm publish"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/lodash.isnull": "latest",
+    "typescript": "latest",
+    "rimraf": "latest"
+  },
+  "peerDependencies": {
+    "react": "latest",
+    "lodash.isnull": "latest"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mehdi Abdollahi",
+    "email": "mehdi.abdollahi3578@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/ilz5753/usectx"
+  }
+}
