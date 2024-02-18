@@ -1,23 +1,8 @@
 {
-  "include": ["index.ts"],
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "composite": true,
-    "strict": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "types": ["typescript"],
-    "declaration": true,
-    "esModuleInterop": true
-  }
+    "outDir": "dist",
+    "module": "commonjs"
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", "dist"]
 }
